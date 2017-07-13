@@ -46,5 +46,8 @@
   "scripts": {
     "start": "node bin/web.js",
     "test": "mocha --reporter list"
+  },
+  "engines": {
+    "node": ">= 8.1.4"
   }
 }
