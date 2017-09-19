@@ -3,8 +3,17 @@ var uuid = require('uuid');
 var basicAuth = require('basic-auth');
 var Analytics = require('analytics-node');
 var nuts = require('../');
+var cors = require('cors');
+
+var corsOptions = {
+  origin: 'serve:://dist';
+}
+
+
 
 var app = express();
+
+app.use(cors(corsOptions));
 
 var apiAuth =  {
     username: process.env.API_USERNAME,
