@@ -6,7 +6,7 @@ var nuts = require('../');
 var cors = require('cors');
 
 var corsOptions = {
-  origin: 'serve:://dist'
+  origin: 'serve://dist'
 };
 
 
